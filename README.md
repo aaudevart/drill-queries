@@ -35,7 +35,7 @@ FROM dfs.`ekito`.`/json/`;
 ```
 SELECT state, count(*) as nb_airports
 FROM dfs.`ekito`.`/json/`
-WHERE state in (‘CA’, ‘FL’)
+WHERE state in ('CA', 'FL')
 GROUP BY state;
 ```
 
@@ -50,9 +50,9 @@ LIMIT 10;
 
 ### Query 5: When is the best time to minimize delay?
 ```
-SELECT `DayOfWeek`, ROUND(AVG(CAST(`ArrDelay` as INTEGER)) ,2) as temps_moyen_retard
+SELECT `DayOfWeek`, ROUND(AVG(CAST(`ArrDelay` as INTEGER)) ,2) as average_delay
 FROM dfs.`ekito`.`/csv`
-WHERE `ArrDelay` not in (‘NA’)
+WHERE `ArrDelay` not in ('NA')
 GROUP BY `DayOfWeek`
 ORDER BY `DayOfWeek`;
 ```
@@ -60,13 +60,13 @@ ORDER BY `DayOfWeek`;
 
 ### Query 6: Display average delay per destination airport
 ```
-SELECT airports.airport, ROUND(AVG(CAST(flights.`ArrDelay` as INTEGER)) ,2) as temps_moyen_retard
+SELECT airports.airport, ROUND(AVG(CAST(flights.`ArrDelay` as INTEGER)) ,2) as average_delay
 FROM dfs.`ekito`.`/csv/` as flights
 JOIN dfs.`ekito`.`/json/` as airports
 ON airports.iata = flights.Dest
-WHERE flights.`ArrDelay` not in (‘NA’)
+WHERE flights.`ArrDelay` not in ('NA')
 GROUP BY airports.airport
-ORDER BY temps_moyen_retard
+ORDER BY average_delay
 LIMIT 10;
 ```
 
