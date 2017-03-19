@@ -3,8 +3,8 @@ Apache Drill : Schema-free SQL Query Engine for Hadoop, NoSQL and Cloud Storage
 
 This github project contains the code source of my [Apache Drill article](https://www.ekito.fr/people/wp-admin/post.php?post=9781)
 
-![alt text][https://mapr.com/en/blog/importance-apache-drill-big-data-ecosystem/assets/drill-logo-400_5.png "Apache Drill"]
-
+![alt text][logo]
+[logo]: https://mapr.com/en/blog/importance-apache-drill-big-data-ecosystem/assets/drill-logo-400_5.png "Apache Drill"
 
 ## Instructions for use
 
