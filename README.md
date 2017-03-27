@@ -1,7 +1,7 @@
 # Apache Drill
 Apache Drill : Schema-free SQL Query Engine for Hadoop, NoSQL and Cloud Storage
 
-This github project contains the code source of my [Apache Drill article](https://www.ekito.fr/people/wp-admin/post.php?post=9781)
+This github project contains the code source of my [Apache Drill article](https://www.ekito.fr/people/drill/)
 
 ![alt text][logo]
 
@@ -12,7 +12,7 @@ This github project contains the code source of my [Apache Drill article](https:
 For installation instructions, go to the [Official documentation](https://drill.apache.org/docs/installing-drill-in-embedded-mode)
 
 ## Pre-requisite
-Please, refer to my [blog article](https://www.ekito.fr/people/?p=9781)
+Please, refer to my [blog article](https://www.ekito.fr/people/drill/)
 - Configure a workspace named ekito : directory where you download this project
 - Update default CSV definition in order to add the option extractHeader
 
